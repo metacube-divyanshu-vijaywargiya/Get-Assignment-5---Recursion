@@ -88,15 +88,15 @@ public class NQueensSolution {
 
 		//prefilling board with '.'
 		for (int i = 0; i < n; i++) {			
-            for (int j = 0; j < n; j++) {            	
-                board[i][j] = '.';
-            }
+	            for (int j = 0; j < n; j++) {            	
+	                board[i][j] = '.';
+	            }
 		}
 
-        //calling solve function to find arrangement
-        solve(0, board, ans);
+	        //calling solve function to find arrangement
+	        solve(0, board, ans);
         
-        return ans;
+        	return ans;
 	}
 	
 	/**
@@ -104,12 +104,12 @@ public class NQueensSolution {
 	 * @param board 2d character array to convert into list<string>
 	 * @return List < String > converted list 
 	 */
-    static List < String > construct(char[][] board) {
-        List < String > res = new LinkedList < String > ();
-        for (int i = 0; i < board.length; i++) {
-            String s = new String(board[i]);
-            res.add(s);
-        }
-        return res;
-    }
+	 static List < String > construct(char[][] board) {
+	 List < String > res = new LinkedList < String > ();
+	 for (int i = 0; i < board.length; i++) {
+	      String s = new String(board[i]);
+	      res.add(s);
+	      }
+	    return res;
+	 }
 }
